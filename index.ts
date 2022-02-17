@@ -5,10 +5,9 @@ restly.authenticate(process.env.RESTLY_KEY)
 
 
 /**
- * @restly
+ * @restly An endpoint for adding a row
  * @method POST
  * @path /item
- * An endpoint for adding a row
  */
 export const addRow = (inputs: {
     // The data to add to the spreadsheet
@@ -21,10 +20,9 @@ export const addRow = (inputs: {
 }
 
 /**
- * @restly
+ * @restly An endpoint for deleting a row
  * @method GET
  * @path /item
- * An endpoint for deleting a row
  */
 export const getItem = (parameters: {
     // The name of the item to get 

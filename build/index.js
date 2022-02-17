@@ -9,10 +9,9 @@ const my_restly_demo_sdk_1 = __importDefault(require("my-restly-demo-sdk"));
 // In prod, RESTLY_KEY is set to the production key
 my_restly_demo_sdk_1.default.authenticate(process.env.RESTLY_KEY);
 /**
- * @restly
+ * @restly An endpoint for adding a row
  * @method POST
  * @path /item
- * An endpoint for adding a row
  */
 const addRow = (inputs) => {
     // @ts-ignore
@@ -21,10 +20,9 @@ const addRow = (inputs) => {
 };
 exports.addRow = addRow;
 /**
- * @restly
+ * @restly An endpoint for deleting a row
  * @method GET
  * @path /item
- * An endpoint for deleting a row
  */
 const getItem = (parameters) => {
     // @ts-ignore
