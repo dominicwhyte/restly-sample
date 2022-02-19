@@ -14,7 +14,7 @@ export const addRow = (inputs: {
     data: { name: string }[]
 }) => {
     // @ts-ignore
-    const result = await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
+    const result = { test: 'hi' } // await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
 
     return result
 }
@@ -29,7 +29,7 @@ export const getItem = (parameters: {
     name: string
 }) => {
     // @ts-ignore
-    const data = await restly.GoogleSheet.addRow('my-gsheet-service', { data: [{ name: parameters.name }] })
+    const data = { test: 'hello' } // await restly.GoogleSheet.addRow('my-gsheet-service', { data: [{ name: parameters.name }] })
     return data
 }
 
@@ -43,7 +43,10 @@ export const getTesting = (parameters: {
     // The name of the item to get 
     name: string
 }) => {
-    const test = `${name} hello`
+    const test = `${parameters.name} hello`
     return test
 }
 
+export const handler = async (event: any, context: any, callback: any) => {
+    return 'hello'
+};
