@@ -37,12 +37,12 @@ const getTesting = (parameters) => {
 };
 exports.getTesting = getTesting;
 /**
- * @restly A sample test endpoint
+ * @restly A sample test endpoint asdfasdf!!
  * @method GET
  * @path /sample
  */
 const getSample = (parameters) => {
-    const test = `${parameters.banana} hello`;
+    const test = `${parameters.banana} yallah!`;
     return test;
 };
 exports.getSample = getSample;
