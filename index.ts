@@ -49,7 +49,7 @@ export const getTesting = (parameters: {
 
 
 /**
- * @restly A sample test endpoint yallah!
+ * @restly A sample test endpoint yallah!!!
  * @method GET
  * @path /sample
  */
