@@ -57,7 +57,7 @@ export const getSample = (parameters: {
     // The name of the item to get 
     banana: string
 }) => {
-    const test = `${parameters.banana} yallah!`
+    const test = `${parameters.banana} hellohello!`
     return test
 }
 

@@ -42,7 +42,7 @@ exports.getTesting = getTesting;
  * @path /sample
  */
 const getSample = (parameters) => {
-    const test = `${parameters.banana} yallah!`;
+    const test = `${parameters.banana} hellohello!`;
     return test;
 };
 exports.getSample = getSample;
