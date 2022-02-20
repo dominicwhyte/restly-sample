@@ -47,3 +47,17 @@ export const getTesting = (parameters: {
     return test
 }
 
+
+/**
+ * @restly A sample test endpoint
+ * @method GET
+ * @path /sample
+ */
+export const getSample = (parameters: {
+    // The name of the item to get 
+    banana: string
+}) => {
+    const test = `${parameters.banana} hello`
+    return test
+}
+
