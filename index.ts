@@ -47,6 +47,3 @@ export const getTesting = (parameters: {
     return test
 }
 
-export const handler = async (event: any, context: any, callback: any) => {
-    return 'hello'
-};

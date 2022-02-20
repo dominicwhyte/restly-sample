@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.handler = exports.getTesting = exports.getItem = exports.addRow = void 0;
+exports.getTesting = exports.getItem = exports.addRow = void 0;
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
 // restly.authenticate(process.env.RESTLY_KEY)
@@ -36,8 +36,4 @@ const getTesting = (parameters) => {
     return test;
 };
 exports.getTesting = getTesting;
-const handler = async (event, context, callback) => {
-    return 'hello';
-};
-exports.handler = handler;
 //# sourceMappingURL=index.js.map
