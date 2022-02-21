@@ -52,7 +52,7 @@ export const deleteRow = (parameters: {
 /**
  * @restly A montana endpoint!
  * @method GET
- * @path /sample
+ * @path /hellohello
  */
 export const testEndpoint = (parameters: {
     // The name of the item to get 

@@ -39,7 +39,7 @@ exports.deleteRow = deleteRow;
 /**
  * @restly A montana endpoint!
  * @method GET
- * @path /sample
+ * @path /hellohello
  */
 const testEndpoint = (parameters) => {
     const test = 'hi';
