@@ -27,7 +27,7 @@ const getSample = (parameters) => {
 };
 exports.getSample = getSample;
 /**
- * @restly A montana demo endpoint!
+ * @restly A montana demo endpoint!!
  * @method GET
  * @path /test
  */
