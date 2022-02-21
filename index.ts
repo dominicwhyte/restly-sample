@@ -13,9 +13,11 @@ export const addRow = (inputs: {
     // The data to add to the spreadsheet
     data: { name: string }[]
 }) => {
+    const serviceName: 'my-gsheet-service' | 'test' = 'test'
     // @ts-ignore
-    // const result = await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
-    const result = { test: 'hi' }
+    const result = await restly.GoogleSheet.addRow(`${serviceName}_${serviceName}`, { data: inputs.data })
+
+
 
     return result
 }
@@ -33,18 +35,20 @@ export const getSample = (parameters: {
     return test
 }
 
+
+
+
 /**
- * @restly A montana demo endpoint!!
- * @method GET
- * @path /test
+ * 
+ * Demo notes:
+ * 
+ * 
+ * firebase cloud functions!
+ * fly.io
+ * 
+ * testing
+ * 
+ * local db - e.g. running local mysql db
+ * 
+ * generating the npm package dynamically! when you run `restly start`, generate it with the googlesheets 
  */
-export const getSkiJorring = (parameters: {
-    // The name of the item to get 
-    skijorring: string
-}) => {
-    const { skijorring } = parameters
-    const test = skijorring + skijorring + skijorring
-    return test
-}
-
-

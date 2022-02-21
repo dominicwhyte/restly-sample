@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSkiJorring = exports.getSample = exports.addRow = void 0;
+exports.getSample = exports.addRow = void 0;
+const my_restly_demo_sdk_1 = require("my-restly-demo-sdk");
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
 // restly.authenticate(process.env.RESTLY_KEY)
@@ -10,9 +11,9 @@ exports.getSkiJorring = exports.getSample = exports.addRow = void 0;
  * @path /item
  */
 const addRow = (inputs) => {
+    const serviceName = 'test';
     // @ts-ignore
-    // const result = await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
-    const result = { test: 'hi' };
+    const result = await my_restly_demo_sdk_1.default.GoogleSheet.addRow(`${serviceName}_${serviceName}`, { data: inputs.data });
     return result;
 };
 exports.addRow = addRow;
@@ -27,14 +28,17 @@ const getSample = (parameters) => {
 };
 exports.getSample = getSample;
 /**
- * @restly A montana demo endpoint!!
- * @method GET
- * @path /test
- */
-const getSkiJorring = (parameters) => {
-    const { skijorring } = parameters;
-    const test = skijorring + skijorring + skijorring;
-    return test;
-};
-exports.getSkiJorring = getSkiJorring;
+ *
+ * Demo notes:
+ *
+ *
+ * firebase cloud functions!
+ * fly.io
+ *
+ * testing
+ *
+ * local db - e.g. running local mysql db
+ *
+ * generating the npm package dynamically! when you run `restly start`, generate it with the googlesheets
+ */ 
 //# sourceMappingURL=index.js.map
