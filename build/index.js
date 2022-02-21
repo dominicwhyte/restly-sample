@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteRow = exports.getSample = exports.addRow = void 0;
+exports.testEndpoint = exports.deleteRow = exports.getSample = exports.addRow = void 0;
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
 // restly.authenticate(process.env.RESTLY_KEY)
@@ -36,4 +36,13 @@ const deleteRow = (parameters) => {
     return test;
 };
 exports.deleteRow = deleteRow;
+/**
+ * @restly A montana endpoint!
+ * @method GET
+ * @path /sample
+ */
+const testEndpoint = (parameters) => {
+    return parameters.a + parameters.b;
+};
+exports.testEndpoint = testEndpoint;
 //# sourceMappingURL=index.js.map
