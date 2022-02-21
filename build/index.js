@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSample = exports.addRow = void 0;
+exports.getSkiJorring = exports.getSample = exports.addRow = void 0;
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
 // restly.authenticate(process.env.RESTLY_KEY)
@@ -26,4 +26,15 @@ const getSample = (parameters) => {
     return test;
 };
 exports.getSample = getSample;
+/**
+ * @restly A montana demo endpoint
+ * @method GET
+ * @path /test
+ */
+const getSkiJorring = (parameters) => {
+    const { skijorring } = parameters;
+    const test = skijorring + skijorring + skijorring;
+    return test;
+};
+exports.getSkiJorring = getSkiJorring;
 //# sourceMappingURL=index.js.map

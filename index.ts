@@ -33,4 +33,18 @@ export const getSample = (parameters: {
     return test
 }
 
+/**
+ * @restly A montana demo endpoint
+ * @method GET
+ * @path /test
+ */
+export const getSkiJorring = (parameters: {
+    // The name of the item to get 
+    skijorring: string
+}) => {
+    const { skijorring } = parameters
+    const test = skijorring + skijorring + skijorring
+    return test
+}
+
 
