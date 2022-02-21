@@ -34,17 +34,3 @@ export const getSample = (parameters: {
 }
 
 
-/**
- * @restly A great deletion endpiont!
- * @method DELETE
- * @path /deleteme
- */
-export const deleteRow = (parameters: {
-    // The name of the item to get 
-    banana: string
-}) => {
-    const test = `${parameters.banana} hellohello!`
-    return test
-}
-
-

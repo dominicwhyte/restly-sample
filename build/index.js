@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteRow = exports.getSample = exports.addRow = void 0;
+exports.getSample = exports.addRow = void 0;
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
 // restly.authenticate(process.env.RESTLY_KEY)
@@ -26,14 +26,4 @@ const getSample = (parameters) => {
     return test;
 };
 exports.getSample = getSample;
-/**
- * @restly A great deletion endpiont!
- * @method DELETE
- * @path /deleteme
- */
-const deleteRow = (parameters) => {
-    const test = `${parameters.banana} hellohello!`;
-    return test;
-};
-exports.deleteRow = deleteRow;
 //# sourceMappingURL=index.js.map
