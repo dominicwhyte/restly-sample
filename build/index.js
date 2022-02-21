@@ -42,6 +42,7 @@ exports.deleteRow = deleteRow;
  * @path /sample
  */
 const testEndpoint = (parameters) => {
+    const test = 'hi';
     return parameters.a + parameters.b;
 };
 exports.testEndpoint = testEndpoint;

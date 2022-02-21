@@ -59,6 +59,6 @@ export const testEndpoint = (parameters: {
     a: string,
     b: string
 }) => {
-
+    const test = 'hi'
     return parameters.a + parameters.b
 }
