@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteRow = exports.getSample = exports.getTesting = exports.getItem = exports.addRow = void 0;
+exports.deleteRow = exports.getSample = exports.addRow = void 0;
+const my_restly_demo_sdk_1 = require("my-restly-demo-sdk");
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
 // restly.authenticate(process.env.RESTLY_KEY)
@@ -11,31 +12,10 @@ exports.deleteRow = exports.getSample = exports.getTesting = exports.getItem = e
  */
 const addRow = (inputs) => {
     // @ts-ignore
-    const result = { test: 'hi' }; // await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
+    const result = await my_restly_demo_sdk_1.default.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data });
     return result;
 };
 exports.addRow = addRow;
-/**
- * @restly An endpoint for deleting a row
- * @method GET
- * @path /item
- */
-const getItem = (parameters) => {
-    // @ts-ignore
-    const data = { test: 'hello' }; // await restly.GoogleSheet.addRow('my-gsheet-service', { data: [{ name: parameters.name }] })
-    return data;
-};
-exports.getItem = getItem;
-/**
- * @restly A test endpoint
- * @method GET
- * @path /testing
- */
-const getTesting = (parameters) => {
-    const test = `${parameters.name} hello`;
-    return test;
-};
-exports.getTesting = getTesting;
 /**
  * @restly A sample test endpoint asdfasdf!!
  * @method GET

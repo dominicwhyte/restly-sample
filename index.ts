@@ -14,39 +14,10 @@ export const addRow = (inputs: {
     data: { name: string }[]
 }) => {
     // @ts-ignore
-    const result = { test: 'hi' } // await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
+    const result = await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
 
     return result
 }
-
-/**
- * @restly An endpoint for deleting a row
- * @method GET
- * @path /item
- */
-export const getItem = (parameters: {
-    // The name of the item to get 
-    name: string
-}) => {
-    // @ts-ignore
-    const data = { test: 'hello' } // await restly.GoogleSheet.addRow('my-gsheet-service', { data: [{ name: parameters.name }] })
-    return data
-}
-
-
-/**
- * @restly A test endpoint
- * @method GET
- * @path /testing
- */
-export const getTesting = (parameters: {
-    // The name of the item to get 
-    name: string
-}) => {
-    const test = `${parameters.name} hello`
-    return test
-}
-
 
 /**
  * @restly A sample test endpoint asdfasdf!!
