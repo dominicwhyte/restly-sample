@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteRow = exports.getSample = exports.addRow = void 0;
-const my_restly_demo_sdk_1 = require("my-restly-demo-sdk");
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
 // restly.authenticate(process.env.RESTLY_KEY)
@@ -12,7 +11,8 @@ const my_restly_demo_sdk_1 = require("my-restly-demo-sdk");
  */
 const addRow = (inputs) => {
     // @ts-ignore
-    const result = await my_restly_demo_sdk_1.default.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data });
+    // const result = await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
+    const result = { test: 'hi' };
     return result;
 };
 exports.addRow = addRow;

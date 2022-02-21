@@ -14,7 +14,8 @@ export const addRow = (inputs: {
     data: { name: string }[]
 }) => {
     // @ts-ignore
-    const result = await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
+    // const result = await restly.GoogleSheet.addRow('my-gsheet-service', { data: inputs.data })
+    const result = { test: 'hi' }
 
     return result
 }
