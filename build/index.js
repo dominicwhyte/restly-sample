@@ -27,7 +27,7 @@ const getSample = (parameters) => {
 };
 exports.getSample = getSample;
 /**
- * @restly A great deletion endpiont
+ * @restly A great deletion endpiont!
  * @method DELETE
  * @path /deleteme
  */

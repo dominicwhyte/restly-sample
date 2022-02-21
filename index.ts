@@ -34,7 +34,7 @@ export const getSample = (parameters: {
 
 
 /**
- * @restly A great deletion endpiont
+ * @restly A great deletion endpiont!
  * @method DELETE
  * @path /deleteme
  */
