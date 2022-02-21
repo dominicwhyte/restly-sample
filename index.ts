@@ -36,6 +36,18 @@ export const getSample = (parameters: {
 }
 
 
+/**
+ * @restly A sample test endpoint asdfasdf!!!
+ * @method GET
+ * @path /testtt
+ */
+export const testttt = (parameters: {
+    // The name of the item to get 
+    banana: string
+}) => {
+    const test = `${parameters.banana} hellohello!`
+    return test
+}
 
 
 /**

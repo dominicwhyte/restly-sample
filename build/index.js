@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSample = exports.addRow = void 0;
+exports.testttt = exports.getSample = exports.addRow = void 0;
 const my_restly_demo_sdk_1 = require("my-restly-demo-sdk");
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
@@ -27,6 +27,16 @@ const getSample = (parameters) => {
     return test;
 };
 exports.getSample = getSample;
+/**
+ * @restly A sample test endpoint asdfasdf!!!
+ * @method GET
+ * @path /testtt
+ */
+const testttt = (parameters) => {
+    const test = `${parameters.banana} hellohello!`;
+    return test;
+};
+exports.testttt = testttt;
 /**
  *
  * Demo notes:
