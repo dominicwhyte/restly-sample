@@ -13,7 +13,7 @@ const my_restly_demo_sdk_1 = require("my-restly-demo-sdk");
 const addRow = (inputs) => {
     const serviceName = 'test';
     // @ts-ignore
-    my_restly_demo_sdk_1.default.postgres;
+    my_restly_demo_sdk_1.default.firebase.insertData('my-database', {});
     return serviceName;
 };
 exports.addRow = addRow;
