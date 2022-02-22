@@ -36,3 +36,18 @@ export const getSample = (parameters: {
 }
 
 
+/**
+ * @restly A gandolf
+ * @method GET
+ * @path /gandolf
+ */
+export const gandolf = (parameters: {
+    // The name of the item to get 
+    banana: string
+}) => {
+    const test = `${parameters.banana} is gandolf`
+    return test
+}
+
+
+
