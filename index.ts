@@ -14,21 +14,9 @@ export const addRow = (inputs: {
     data: { name: string }[]
 }) => {
     const serviceName: 'my-gsheet-service' | 'test' = 'test'
+    // @ts-ignore
+    restly.postgres
 
     return serviceName
 }
-
-/**
- * @restly A sample test endpoint asdfasdf!!!!
- * @method GET
- * @path /sample
- */
-export const getSample = (parameters: {
-    // The name of the item to get 
-    banana: string
-}) => {
-    const test = `${parameters.banana} hellohello!`
-    return test
-}
-
 
