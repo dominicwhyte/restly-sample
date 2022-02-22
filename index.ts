@@ -25,7 +25,7 @@ export const addRow = (inputs: {
 }
 
 /**
- * @restly A sample test endpoint asdfasdf!!!
+ * @restly A sample test endpoint asdfasdf!!!!
  * @method GET
  * @path /sample
  */
