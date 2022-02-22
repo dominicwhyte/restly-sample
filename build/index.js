@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.gandolf = exports.getSample = exports.addRow = void 0;
+exports.getSample = exports.addRow = void 0;
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
 // restly.authenticate(process.env.RESTLY_KEY)
@@ -12,8 +12,8 @@ exports.gandolf = exports.getSample = exports.addRow = void 0;
 const addRow = (inputs) => {
     const serviceName = 'test';
     // @ts-ignore
-    // const result = await restly.GoogleSheet.addRow(`${serviceName}_${serviceName}`, { data: inputs.data })
-    const result = {};
+    // const result = await restly.
+    // const result = {}
     return result;
 };
 exports.addRow = addRow;
@@ -27,14 +27,4 @@ const getSample = (parameters) => {
     return test;
 };
 exports.getSample = getSample;
-/**
- * @restly A gandolf
- * @method GET
- * @path /gandolf
- */
-const gandolf = (parameters) => {
-    const test = `${parameters.banana} is gandolf`;
-    return test;
-};
-exports.gandolf = gandolf;
 //# sourceMappingURL=index.js.map

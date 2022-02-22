@@ -15,8 +15,10 @@ export const addRow = (inputs: {
 }) => {
     const serviceName: 'my-gsheet-service' | 'test' = 'test'
     // @ts-ignore
-    // const result = await restly.GoogleSheet.addRow(`${serviceName}_${serviceName}`, { data: inputs.data })
-    const result = {}
+    // const result = await restly.
+
+
+    // const result = {}
 
 
     return result
@@ -34,20 +36,5 @@ export const getSample = (parameters: {
     const test = `${parameters.banana} hellohello!`
     return test
 }
-
-
-/**
- * @restly A gandolf
- * @method GET
- * @path /gandolf
- */
-export const gandolf = (parameters: {
-    // The name of the item to get 
-    banana: string
-}) => {
-    const test = `${parameters.banana} is gandolf`
-    return test
-}
-
 
 
