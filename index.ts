@@ -10,7 +10,7 @@ import restly from 'my-restly-demo-sdk'
  * @path /item
  */
 export const addRow = (inputs: {
-    // The data to add to the spreadsheet!!
+    // The data to add to the spreadsheet!!!
     data: { name: string }[]
 }) => {
     const serviceName: 'my-gsheet-service' | 'test' = 'test'
