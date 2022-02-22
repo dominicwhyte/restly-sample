@@ -11,10 +11,7 @@ exports.getSample = exports.addRow = void 0;
  */
 const addRow = (inputs) => {
     const serviceName = 'test';
-    // @ts-ignore
-    // const result = await restly.
-    // const result = {}
-    return result;
+    return serviceName;
 };
 exports.addRow = addRow;
 /**

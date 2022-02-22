@@ -14,14 +14,8 @@ export const addRow = (inputs: {
     data: { name: string }[]
 }) => {
     const serviceName: 'my-gsheet-service' | 'test' = 'test'
-    // @ts-ignore
-    // const result = await restly.
 
-
-    // const result = {}
-
-
-    return result
+    return serviceName
 }
 
 /**
