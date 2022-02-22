@@ -37,18 +37,19 @@ export const getSample = (parameters: {
 
 
 
-
 /**
- * 
- * Demo notes:
- * 
- * 
- * firebase cloud functions!
- * fly.io
- * 
- * testing
- * 
- * local db - e.g. running local mysql db
- * 
- * generating the npm package dynamically! when you run `restly start`, generate it with the googlesheets 
+ * @restly Test endpiont
+ * @method GET
+ * @path /test123
  */
+export const atest = (parameters: {
+    // The name of the item to get 
+    banana: string
+}) => {
+    const test = `${parameters.banana} hellohello!`
+    return test
+}
+
+
+
+

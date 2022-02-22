@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSample = exports.addRow = void 0;
+exports.atest = exports.getSample = exports.addRow = void 0;
 const my_restly_demo_sdk_1 = require("my-restly-demo-sdk");
 // @ts-ignore
 // In prod, RESTLY_KEY is set to the production key
@@ -28,17 +28,13 @@ const getSample = (parameters) => {
 };
 exports.getSample = getSample;
 /**
- *
- * Demo notes:
- *
- *
- * firebase cloud functions!
- * fly.io
- *
- * testing
- *
- * local db - e.g. running local mysql db
- *
- * generating the npm package dynamically! when you run `restly start`, generate it with the googlesheets
- */ 
+ * @restly Test endpiont
+ * @method GET
+ * @path /test123
+ */
+const atest = (parameters) => {
+    const test = `${parameters.banana} hellohello!`;
+    return test;
+};
+exports.atest = atest;
 //# sourceMappingURL=index.js.map
