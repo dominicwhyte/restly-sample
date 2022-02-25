@@ -1,7 +1,7 @@
 import Restly from 'restly';
 
 
-const restly = Restly('0e4afc9634c0757265463287ff4931ecc9906d30ef59600a');
+const restly = Restly('a5b5c56f2de8a865961eb6f6066dfd34574121a6e0f1f8ff');
 const googlesheet = restly.GoogleSheets('googlesheets-2');
 // const slack = restly.Slack('restly-slack');
 // const sendgrid = restly.Sendgrid('restly-slack');
@@ -10,7 +10,7 @@ const mySheetId = '19SgoB5sMKxeSnQ0eQbTwHyJAnQ1WPCk0tLf0iMB8lkg'
 const campaignId = 'dom todo'
 
 /**
- * @restly Handle access request to the Restly beta!
+ * @restly Handle access request to the Restly beta!!
  * @method POST
  * @path /requestAccess
  */
