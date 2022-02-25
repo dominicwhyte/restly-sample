@@ -34,19 +34,4 @@ export const test = async ({input}: {
 }
 
 
-/**
- * @restly Get waitlist
- * @method GET
- * @path /waitlist
- */
-export const getWaitlist = async ({input}: {
-    // Email requesting access
-    input: string
-}) => {
-
-    const response = await googlesheet.read({sheetId: mySheetId})
-
-    return response
-}
-
 
