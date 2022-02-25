@@ -9,7 +9,7 @@ const googlesheet = restly.GoogleSheets('googlesheets-5');
 const mySheetId = '1QvaIZxd6Qk8R2BNrmEin36wpjZ1uJwL8NjOkBJFB_k8';
 const campaignId = 'dom todo';
 /**
- * @restly Handle access request to the Restly beta
+ * @restly Handle access request to the Restly beta!
  * @method POST
  * @path /requestAccess
  */
