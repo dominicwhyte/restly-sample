@@ -2,6 +2,7 @@
   "name": "restly-sample",
   "version": "1.0.0",
   "description": "An example Restly repo",
+  "private": true,
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,5 +10,8 @@
     "deploy": "tsc --build && git add . && git commit -m \"update\" && git push origin main"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "restly": "^1.0.21"
+  }
 }

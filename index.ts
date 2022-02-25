@@ -1,22 +1,30 @@
-import restly from 'my-restly-demo-sdk'
-// @ts-ignore
-// In prod, RESTLY_KEY is set to the production key
-// restly.authenticate(process.env.RESTLY_KEY)
+import Restly from 'restly';
 
 
+const restly = Restly('e585686ff1be172c672ea26a4e0c1efc49d055f04408a4a6');
+const googlesheet = restly.GoogleSheets('googlesheets-5');
+// const slack = restly.Slack('restly-slack');
+// const sendgrid = restly.Sendgrid('restly-slack');
+
+const mySheetId = '1QvaIZxd6Qk8R2BNrmEin36wpjZ1uJwL8NjOkBJFB_k8'
+const campaignId = 'dom todo'
 /**
- * @restly An endpoint for adding a row
+ * @restly Handle access request to the Restly beta
  * @method POST
- * @path /item
+ * @path /requestAccess
  */
-export const addRow = (inputs: {
-    // The data to add to the spreadsheet!!!!
-    data: { name: string }[]
+export const onRequestAccess = async ({email}: {
+    // Email requesting access
+    email: { name: string }[]
 }) => {
-    const serviceName: 'my-gsheet-service' | 'test' = 'test'
-    // @ts-ignore
-    restly.firebase.insertData('my-database', {})
 
-    return serviceName
+    await googlesheet.addRow({ sheetId: mySheetId, value: { email } });
+
+    // await slack.message({ channel: '#waitlist', message: `${email} joined the waitlist` });
+
+    // await sendgrid.sendEmail({email, campaignId})
+
+    return
 }
+
 

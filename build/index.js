@@ -1,20 +1,23 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.addRow = void 0;
-const my_restly_demo_sdk_1 = require("my-restly-demo-sdk");
-// @ts-ignore
-// In prod, RESTLY_KEY is set to the production key
-// restly.authenticate(process.env.RESTLY_KEY)
+exports.onRequestAccess = void 0;
+const restly_1 = require("restly");
+const restly = (0, restly_1.default)('e585686ff1be172c672ea26a4e0c1efc49d055f04408a4a6');
+const googlesheet = restly.GoogleSheets('googlesheets-5');
+// const slack = restly.Slack('restly-slack');
+// const sendgrid = restly.Sendgrid('restly-slack');
+const mySheetId = '1QvaIZxd6Qk8R2BNrmEin36wpjZ1uJwL8NjOkBJFB_k8';
+const campaignId = 'dom todo';
 /**
- * @restly An endpoint for adding a row
+ * @restly Handle access request to the Restly beta
  * @method POST
- * @path /item
+ * @path /requestAccess
  */
-const addRow = (inputs) => {
-    const serviceName = 'test';
-    // @ts-ignore
-    my_restly_demo_sdk_1.default.firebase.insertData('my-database', {});
-    return serviceName;
+const onRequestAccess = async ({ email }) => {
+    await googlesheet.addRow({ sheetId: mySheetId, value: { email } });
+    // await slack.message({ channel: '#waitlist', message: `${email} joined the waitlist` });
+    // await sendgrid.sendEmail({email, campaignId})
+    return;
 };
-exports.addRow = addRow;
+exports.onRequestAccess = onRequestAccess;
 //# sourceMappingURL=index.js.map
