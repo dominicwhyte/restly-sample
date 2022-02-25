@@ -6,8 +6,9 @@ const googlesheet = restly.GoogleSheets('googlesheets-5');
 // const slack = restly.Slack('restly-slack');
 // const sendgrid = restly.Sendgrid('restly-slack');
 
-const mySheetId = '1QvaIZxd6Qk8R2BNrmEin36wpjZ1uJwL8NjOkBJFB_k8'
+const mySheetId = '19SgoB5sMKxeSnQ0eQbTwHyJAnQ1WPCk0tLf0iMB8lkg'
 const campaignId = 'dom todo'
+
 /**
  * @restly Handle access request to the Restly beta!!
  * @method POST
@@ -15,7 +16,7 @@ const campaignId = 'dom todo'
  */
 export const onRequestAccess = async ({email}: {
     // Email requesting access
-    email: { name: string }[]
+    email: string
 }) => {
 
     await googlesheet.addRow({ sheetId: mySheetId, value: { email } });
