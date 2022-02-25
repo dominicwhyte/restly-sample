@@ -1,8 +1,8 @@
 import Restly from 'restly';
 
 
-const restly = Restly('e585686ff1be172c672ea26a4e0c1efc49d055f04408a4a6');
-const googlesheet = restly.GoogleSheets('googlesheets-5');
+const restly = Restly('0e4afc9634c0757265463287ff4931ecc9906d30ef59600a');
+const googlesheet = restly.GoogleSheets('googlesheets-2');
 // const slack = restly.Slack('restly-slack');
 // const sendgrid = restly.Sendgrid('restly-slack');
 
