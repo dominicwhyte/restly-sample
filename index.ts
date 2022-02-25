@@ -28,6 +28,18 @@ export const onRequestAccess = async ({email}: {
     return
 }
 
+/**
+ * @restly Handle access request to the Restly beta!!
+ * @method POST
+ * @path /requestAccess
+ */
+export const getWaitlist = async () => {
+
+    const waitlistEntries = await googlesheet.read({sheetId: mySheetId})
+
+    return waitlistEntries
+}
+
 
 /**
  * @restly Simple demo endpoint
