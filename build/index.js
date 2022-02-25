@@ -21,8 +21,8 @@ exports.onRequestAccess = onRequestAccess;
  * @path /waitlist
  */
 const getWaitlist = async () => {
-    await googlesheet.read({ sheetId: mySheetId });
-    return;
+    const response = await googlesheet.read({ sheetId: mySheetId });
+    return response;
 };
 exports.getWaitlist = getWaitlist;
 //# sourceMappingURL=index.js.map
