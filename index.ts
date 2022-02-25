@@ -21,17 +21,5 @@ export const onRequestAccess = async ({email}: {
     return
 }
 
-/**
- * @restly Simple demo endpoint
- * @method GET
- * @path /test
- */
-export const test = async ({input}: {
-    // Email requesting access
-    input: string
-}) => {
-    return `You gave input: ${input}`
-}
-
 
 
