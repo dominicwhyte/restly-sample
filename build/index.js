@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.test = exports.getWaitlist = exports.onRequestAccess = void 0;
 const restly_1 = require("restly");
 const restly = (0, restly_1.default)('a5b5c56f2de8a865961eb6f6066dfd34574121a6e0f1f8ff');
-const googlesheet = restly.GoogleSheets('googlesheets-2');
+const googlesheet = restly.GoogleSheets('googlesheets-1');
 // const slack = restly.Slack('restly-slack');
 // const sendgrid = restly.Sendgrid('restly-slack');
 const mySheetId = '19SgoB5sMKxeSnQ0eQbTwHyJAnQ1WPCk0tLf0iMB8lkg';

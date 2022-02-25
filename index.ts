@@ -2,7 +2,7 @@ import Restly from 'restly';
 
 
 const restly = Restly('a5b5c56f2de8a865961eb6f6066dfd34574121a6e0f1f8ff');
-const googlesheet = restly.GoogleSheets('googlesheets-2');
+const googlesheet = restly.GoogleSheets('googlesheets-1');
 // const slack = restly.Slack('restly-slack');
 // const sendgrid = restly.Sendgrid('restly-slack');
 
