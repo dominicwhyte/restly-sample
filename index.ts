@@ -29,9 +29,9 @@ export const onRequestAccess = async ({email}: {
 }
 
 /**
- * @restly Handle access request to the Restly beta!!
- * @method POST
- * @path /requestAccess
+ * @restly Get list of emails in the Restly beta
+ * @method GET
+ * @path /waitlist
  */
 export const getWaitlist = async () => {
 

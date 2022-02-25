@@ -21,9 +21,9 @@ const onRequestAccess = async ({ email }) => {
 };
 exports.onRequestAccess = onRequestAccess;
 /**
- * @restly Handle access request to the Restly beta!!
- * @method POST
- * @path /requestAccess
+ * @restly Get list of emails in the Restly beta
+ * @method GET
+ * @path /waitlist
  */
 const getWaitlist = async () => {
     const waitlistEntries = await googlesheet.read({ sheetId: mySheetId });
