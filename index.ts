@@ -24,19 +24,3 @@ export const onRequestAccess = async ({email}: {
 }
 
 
-/**
- * @restly test
- * @method GET
- * @path /get
- */
-export const getTest = async ({email}: {
-    // Email requesting access
-    email: string
-}) => {
-
-
-
-    return "test"
-}
-
-
