@@ -2,6 +2,8 @@ import Restly from 'restly';
 
 
 const restly = Restly('a5b5c56f2de8a865961eb6f6066dfd34574121a6e0f1f8ff');
+
+
 const googlesheet = restly.GoogleSheets('googlesheets-1');
 
 const mySheetId = '19SgoB5sMKxeSnQ0eQbTwHyJAnQ1WPCk0tLf0iMB8lkg'
@@ -32,6 +34,19 @@ export const getWaitlist = async () => {
     const response = await googlesheet.read({sheetId: mySheetId})
 
     return response
+}
+
+
+/**
+ * @restly Get the test
+ * @method GET
+ * @path /test
+ */
+export const getTest = async () => {
+
+
+
+    return 'sup'
 }
 
 
