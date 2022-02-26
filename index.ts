@@ -23,3 +23,16 @@ export const onRequestAccess = async ({email}: {
     return
 }
 
+
+/**
+ * @restly Get the restly waitlist
+ * @method GET
+ * @path /waitlist
+ */
+export const getWaitlist = async () => {
+
+const response = await googlesheet.read({sheetId: mySheetId})
+
+    return response
+}
+
