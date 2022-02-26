@@ -23,3 +23,15 @@ export const onRequestAccess = async ({email}: {
     return
 }
 
+/**
+ * @restly Testing
+ * @method GET
+ * @path /test
+ */
+export const getTest = async ({email}: {
+    // Email requesting access
+    email: string
+}) => {
+    return `${email} hello`
+}
+
