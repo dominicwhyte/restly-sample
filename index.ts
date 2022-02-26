@@ -1,7 +1,7 @@
 import Restly from 'restly';
 
 
-const restly = Restly('a5b5c56f2de8a865961eb6f6066dfd34574121a6e0f1f8ff');
+const restly = Restly('7bdba6026504ca5027274375cfde5def0152973372eb85c7');
 
 
 const googlesheet = restly.GoogleSheets('googlesheets-1');
@@ -21,30 +21,6 @@ export const onRequestAccess = async ({email}: {
     await googlesheet.addRow({ sheetId: mySheetId, value: { email } });
 
     return
-}
-
-
-/**
- * @restly Get the waitlist
- * @method GET
- * @path /waitlist
- */
-export const getWaitlist = async () => {
-
-    const response = await googlesheet.read({sheetId: mySheetId})
-
-    return response
-}
-
-
-/**
- * @restly Get the test
- * @method GET
- * @path /test
- */
-export const getTest = async () => {
-
-    return 'sup'
 }
 
 
