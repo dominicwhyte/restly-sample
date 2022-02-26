@@ -36,17 +36,3 @@ export const getWaitlist = async () => {
     return response
 }
 
-
-/**
- * @restly Get the test
- * @method GET
- * @path /test
- */
-export const getTest = async () => {
-
-
-
-    return 'sup'
-}
-
-
