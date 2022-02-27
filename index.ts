@@ -18,21 +18,23 @@ export const onRequestAccess = async ({email}: {
     email: string
 }) => {
 
-    await googlesheet.addRow({ sheetId: mySheetId, value: { email } });
+    
 
     return
 }
 
 
 /**
- * @restly Get the restly waitlist
+ * @restly Add fluff to spreadsheet
  * @method GET
- * @path /waitlist
+ * @path /fluff
  */
-export const getWaitlist = async () => {
+export const addFluff = async ({fluffName}: {fluffName: string}) => {
 
-const response = await googlesheet.read({sheetId: mySheetId})
+    await googlesheet.addRow({ sheetId: mySheetId, value: { email: fluffName } });
 
-    return response
+    return `Hello ${fluffName}`
 }
+
+
 

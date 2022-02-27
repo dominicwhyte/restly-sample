@@ -41,3 +41,20 @@ export const getWaitlist = async () => {
     return waitlistEntries
 }
 
+
+
+/**
+ * @restly Request access to the Restly beta
+ * @method POST
+ * @path /requestAccess
+ */
+ export const requestAccess = async ({ email }: { email: string }) => {
+    await googlesheet.addRow({ sheetId: mySheetId, value: { email } });
+  
+    await slack.message({
+      channel: '#waitlist',
+      message: `${email} joined waitlist`,
+    });
+  
+    return;
+  };
