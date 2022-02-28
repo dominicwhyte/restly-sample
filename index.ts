@@ -17,24 +17,41 @@ export const onRequestAccess = async ({email}: {
     // Email requesting access
     email: string
 }) => {
-
-    
+    await googlesheet.addRow({sheetId: mySheetId, value: email})    
 
     return
 }
 
 
 /**
- * @restly Add fluff to spreadsheet
+ * @restly Get waitlist entries
  * @method GET
- * @path /fluff
+ * @path /waitlist
  */
-export const addFluff = async ({fluffName}: {fluffName: string}) => {
-
-    await googlesheet.addRow({ sheetId: mySheetId, value: { email: fluffName } });
-
-    return `Hello ${fluffName}`
+export const getWaitlist = async ({email}: {
+    // Email requesting access
+    email: string
+}) => {
+    const response = await googlesheet.read({sheetId: mySheetId})
+    return response
 }
+
+
+/**
+ * @restly Grant access to waitlist
+ * @method POST
+ * @path /grantAccess
+ */
+export const grantAccess = async ({email}: {
+    // Email to grant access to
+    email: string
+}) => {
+    const response = await googlesheet.read({sheetId: mySheetId})
+    return response
+}
+
+
+
 
 
 
