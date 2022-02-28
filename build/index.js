@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.grantAccess = exports.getWaitlist = exports.onRequestAccess = void 0;
+exports.removeAccess = exports.grantAccess = exports.getWaitlist = exports.onRequestAccess = void 0;
 const restly_1 = require("restly");
 const restly = (0, restly_1.default)('7bdba6026504ca5027274375cfde5def0152973372eb85c7');
 const googlesheet = restly.GoogleSheets('googlesheets-1');
@@ -35,4 +35,14 @@ const grantAccess = async ({ email }) => {
     return response;
 };
 exports.grantAccess = grantAccess;
+/**
+ * @restly Remove from waitlist
+ * @method DELETE
+ * @path /removeAccess
+ */
+const removeAccess = async ({ email }) => {
+    const response = await googlesheet.read({ sheetId: mySheetId });
+    return response;
+};
+exports.removeAccess = removeAccess;
 //# sourceMappingURL=index.js.map

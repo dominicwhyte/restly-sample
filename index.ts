@@ -50,6 +50,19 @@ export const grantAccess = async ({email}: {
     return response
 }
 
+/**
+ * @restly Remove from waitlist
+ * @method DELETE
+ * @path /removeAccess
+ */
+export const removeAccess = async ({email}: {
+    // Email to grant access to
+    email: string
+}) => {
+    const response = await googlesheet.read({sheetId: mySheetId})
+    return response
+}
+
 
 
 
