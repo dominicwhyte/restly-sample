@@ -22,7 +22,7 @@ exports.onRequestAccess = onRequestAccess;
  */
 const getWaitlist = async () => {
     const response = await googlesheet.read({ sheetId: mySheetId });
-    return;
+    return response;
 };
 exports.getWaitlist = getWaitlist;
 //# sourceMappingURL=index.js.map
