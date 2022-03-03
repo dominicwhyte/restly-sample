@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onRequestAccess = void 0;
+exports.getWaitlist = exports.onRequestAccess = void 0;
 const restly_1 = require("restly");
 const restly = (0, restly_1.default)('7bdba6026504ca5027274375cfde5def0152973372eb85c7');
 const googlesheet = restly.GoogleSheets('googlesheets-1');
@@ -15,4 +15,14 @@ const onRequestAccess = async ({ email }) => {
     return;
 };
 exports.onRequestAccess = onRequestAccess;
+/**
+ * @restly Get waitlist
+ * @method GET
+ * @path /waitlist
+ */
+const getWaitlist = async () => {
+    const response = await googlesheet.read({ sheetId: mySheetId });
+    return response;
+};
+exports.getWaitlist = getWaitlist;
 //# sourceMappingURL=index.js.map
