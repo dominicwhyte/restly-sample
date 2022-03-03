@@ -22,14 +22,5 @@ export const onRequestAccess = async ({email}: {
     return
 }
 
-/**
- * @restly Testing
- * @method GET
- * @path /sup
- */
-export const getSup = async () => {
-
-    return 'sup'
-}
 
 
