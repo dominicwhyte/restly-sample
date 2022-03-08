@@ -6,7 +6,7 @@ const restly = (0, restly_1.default)('7bdba6026504ca5027274375cfde5def0152973372
 const googlesheet = restly.GoogleSheets('googlesheets-2');
 const mySheetId = '19SgoB5sMKxeSnQ0eQbTwHyJAnQ1WPCk0tLf0iMB8lkg';
 /**
- * @restly Handle access request to the Restly beta!!
+ * @restly Handle access request to the Restly beta
  * @method POST
  * @path /requestAccess
  */
