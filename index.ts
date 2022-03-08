@@ -4,7 +4,7 @@ import Restly from 'restly';
 const restly = Restly('7bdba6026504ca5027274375cfde5def0152973372eb85c7');
 
 
-const googlesheet = restly.GoogleSheets('googlesheets-1');
+const googlesheet = restly.GoogleSheets('googlesheets-2');
 
 const mySheetId = '19SgoB5sMKxeSnQ0eQbTwHyJAnQ1WPCk0tLf0iMB8lkg'
 
