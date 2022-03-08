@@ -28,8 +28,7 @@ export const onRequestAccess = async ({email}: {
  * @path /waitlist
  */
 export const getWaitlist = async () => {
-
-
-    return 'sup'
+    const response = await googlesheet.read({sheetId: mySheetId})
+    return response
 }
 
